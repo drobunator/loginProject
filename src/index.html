@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <ul class="nav nav-tabs nav_position nav_color">
+        <li class="nav-item">
+          <a class="nav-link active nav-login" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-register" href="#">Register</a>
+        </li>
+      </ul>
+
+      <div
+        class="login-form-wrap d-flex align-items-center register-form inactive"
+      >
+        <div class="form-card card ml-auto">
+          <div class="card-body">
+            <h4 class="card-title">Please Register</h4>
+            <form name="registerForm" id="registerForm">
+              <div class="form-group">
+                <label for="registerEmail">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  placeholder="Password"
+                  data-required="password"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerNickname">Nickname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerNickname"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter  nickname"
+                  data-required="text"
+                  data-invalid-message="Please enter your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerFirstName">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerFirstName"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter first name"
+                  data-required="text"
+                  data-invalid-message="Please enter your first name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerLastName">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerLastName"
+                  placeholder="Enter last name"
+                  data-required="text"
+                  data-invalid-message="Please enter your last name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerPhone">Phone number</label>
+                <input type="text" class="form-control" id="registerPhone"
+                placeholder="Enter you phone number" data-required="phone"
+                data-invalid-message="The phone should be an ex. "0899000909""
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerGender">Gender</label>
+                <select
+                  class="form-control"
+                  id="registerGender"
+                  data-required="text"
+                >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="registerBirthday">Date of Birth</label>
+                <input
+                  class="form-control"
+                  type="date"
+                  id="registerBirthday"
+                  name="registerBirthday"
+                  min="1918-01-01"
+                  max="2050-12-31"
+                  data-required="date"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerCountry">Country</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerCountry"
+                  placeholder="Enter country"
+                  data-required="text"
+                  data-invalid-message="Please choose your country"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="registerCity">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerCity"
+                  placeholder="Enter city"
+                  disabled="true"
+                  data-required="text"
+                  data-invalid-message=" Please choose your city"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- login form -->
+      <div class="login-form-wrap d-flex align-items-center login-form">
+        <div class="form-card card ml-auto">
+          <div class="card-body">
+            <h4 class="card-title">Please Login</h4>
+            <form name="loginForm" id="loginForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  data-required="password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- /.login-page-wrapp -->
+  </body>
+</html>
